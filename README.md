@@ -1,6 +1,6 @@
-# [Daily Typer](https://chrome.google.com/webstore/detail/daily-typer/pkafjlgablpiocffekncinpmfojicfgi)
-While seeing your typing speed from a programmed typing tests can be exciting, many of the popular typing speed test websites use random, simple words from a small selection from the english dictionary, which can lead to an inaccurate and unrealistic result. 
+# Alzheimer's Disease Computer Extension
+Forked from [Daily Typer](https://chrome.google.com/webstore/detail/daily-typer/pkafjlgablpiocffekncinpmfojicfgi) project.
 
-Use the Daily Typer Chrome Extension to see what your true typing speed is from your daily typing activities like typing a Tweet, Facebook post, email, or even an essay! 
+Alzheimer’s Disease (AD) is typically symptomized by degrading cognitive health. Given the absence of a cure, early treatment is emphasized. The question becomes: how can early detection of AD be optimized?
 
-Test the accuracy of this extension's typing speed algorithm by using the extension on a traditional typing test like monkeytype.com.
+The hope of this project is to provide a convenient at-home screening tool that continuously monitors cognitive health by tracking character per minute, CPM, and pauses per minute, PPM. Both computer usage variables have been found to be good indicators of cognitive impairment based on [this study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6033108/).
