@@ -9,17 +9,20 @@ function reset(){
   chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
     var url = tabs[0].url;
     if(url == "chrome://newtab/"){
-      document.getElementById("wpm").innerHTML = "Unavailable";
+      document.getElementById("cpm").innerHTML = "Unavailable";
+      document.getElementById("pause").innerHTML = "Unavailable";
+      document.getElementById("time").innerHTML = "Unavailable";
     }
     else{
-      document.getElementById("wpm").innerHTML = 0 + " wpm";
+      document.getElementById("cpm").innerHTML = 0 + " character per min.";
+      document.getElementById("pause").innerHTML = 0 + " pauses per min.";
+      document.getElementById("time").innerHTML = 0 + " seconds";
     }
    });
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  var link = document.getElementById('link');
-  
+var link = document.getElementById('link');
   link.addEventListener('click', function() {
     reset();
     chrome.runtime.sendMessage({
@@ -29,14 +32,17 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function updatePopup(){
-    chrome.storage.local.get('time', function(data) {
-      time = data.time;
-      document.getElementById("wpm").innerHTML = data.time + " wpm";
+    chrome.storage.local.get(['cpm','pause','time'], function(data) {
+      document.getElementById("cpm").innerHTML = data.cpm + " cpm";
+      document.getElementById("pause").innerHTML = data.pause + " pauses per minute";
+      document.getElementById("time").innerHTML = Math.round(data.time) + " seconds";
     });
+    
     chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
       var url = tabs[0].url;
       if(url == "chrome://newtab/"){
-        document.getElementById("wpm").innerHTML = "Unavailable";
+        document.getElementById("cpm").innerHTML = "Unavailable";
+        document.getElementById("pause").innerHTML = "Unavailable";
         chrome.browserAction.setIcon({path: "Daily TyperN.png"});
       }
      });

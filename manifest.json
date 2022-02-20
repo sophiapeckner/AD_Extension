@@ -1,12 +1,12 @@
 {
     "manifest_version": 2,
-    "name": "Daily Typer",
+    "name": "Alzheimer's Screening Tool",
     "version": "1.0",
-    "description": "Know your real typing speed in everyday typing activities.",
+    "description": "Track your typing speed and pauses per minute. Both are indicators of mild cognitive impairment, a precursor of dementia.",
 
     "browser_action": {
         "default_popup": "popup.html",
-        "default_icon": "Daily TyperN.png"
+        "default_icon": "team_logo.png"
     },
 
     "permissions":[

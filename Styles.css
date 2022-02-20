@@ -1,34 +1,67 @@
 body{
-    width: 250px;
-    background-color: #191919;
-}
-#wpm {
-    margin-top: 29px;
-    margin-bottom: 23px;
-    font: 25px Courier, sans-serif;
-    text-align: center;
-    font-weight: bold;
-    color: #8DD1C7;
-    letter-spacing: 2px;
-}
-.wrapper {
-  text-align: center;
+  width: 250px;
+  background-color: #ffffff;
+  color: #3fc8ac;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
 }
 
-.button {
+/* Header */
+.name{
+  text-align: center;
+}
+h1.name{
+  font-size: 30px;
+}
+h2.name{
+  margin-top: -20px;
+  font-size: 10px;
+}
+
+#privacy{
+  color: #3fc8ac;
+  text-decoration: none;
+}
+
+/* Reset Button */
+/* .button{
   position: absolute;
   top: 50%;
+} */
+.wrapper{
+  text-align: center;
 }
 button{
-  background-color: #333333;
-  font: 13px Courier, sans-serif;
-  font-weight: bold;
-  border-radius: 4px;
-  margin-top: 0px;
+  background-color: #ffffff;
+  margin-top: 5px;
   margin-bottom: 5px;
-  border: none;
+  border-color: #5ce1e6;
   padding: 4px 8px;
   display: inline-block;
   cursor: pointer;
-  color: #6D7271;
+}
+#link{
+  font-size: 15px;
+  border-radius: 4px;
+  color: #3fc8ac;
+}
+button:hover{
+  background-color: #ffffff;
+}
+
+.factor{
+  font-size: 15px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 5px;
+  margin: 0;
+}
+.factor:hover{
+  background-color: rgba(39, 39, 39, 0.05);
+}
+
+hr{
+  border: 0.5px solid rgba(39, 39, 39, 0.2);
+  margin-top: -1px;
+  margin-bottom: -1px;
 }
